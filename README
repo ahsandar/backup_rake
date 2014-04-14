@@ -1,0 +1,12 @@
+(This is a backup script that takes all its params from a YAML file.)
+
+This is a script to backup your assets/CMS folder and copy of your SQL database 
+to a remote server and keep specifed number of copies (defined in the YAML file).
+You can also use to sync all backups to your local or restore a bacup from the local 
+or from server.
+
+It creates a backup on your local machine and keeps a copy on the remote server.
+It uses rsync to keep the backups synced.
+
+
+Hope it helps anyone writing rake tasks or backup tasks. To learn few tips and tricks. ;)

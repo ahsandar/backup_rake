@@ -1,0 +1,104 @@
+development:
+  local:
+    application:  digital
+    app_root:  ~/
+    backup_dir:  ~/backup
+    backup_folder: backups
+    cms_path: cms
+    restore_pkg_path: ~/restore_dir
+    backup_count: 5
+    latest_backup: latest_backup.zip
+  db:
+    username: root 
+    password: root
+    name: dev
+  rsync:
+    username: app
+    password: password
+    host: 172.26.32.24
+    ip: 172.26.32.24
+    sync_dir: /Users/app/rsync
+
+mock:
+  local:
+    application:  digital_hub
+    app_root:  ~/source
+    backup_dir:  ~/backup
+    backup_folder: backups
+    cms_path: cms
+    restore_pkg_path: ~/restore_dir
+    backup_count: 5
+    latest_backup: latest_backup.zip
+  db:
+    username: root 
+    password: root
+    name: dev
+  rsync:
+    username: app
+    password: password
+    host: localhost
+    ip: 172.26.32.24
+    sync_dir: /Users/app/rsync_mock
+
+test:
+  local:
+    application:  digital_hub
+    app_root:  /var/www
+    backup_dir:  /var/www/backup
+    backup_folder: backups
+    cms_path: shared/cms
+    restore_pkg_path: /var/www/restore_dir
+    backup_count: 5
+    latest_backup: latest_backup.zip
+  db:
+    username: root 
+    password: root
+    name: dev
+  rsync:
+    username: app
+    password: password
+    host: 172.26.32.24
+    ip: 172.26.32.24
+    sync_dir: /Users/app/rsync_test
+
+production:
+  local:
+    application:  digital_hub
+    app_root:  /var/www
+    backup_dir:  /var/www/backup
+    backup_folder: backups
+    cms_path: shared/cms
+    restore_pkg_path: /var/www/restore_dir
+    backup_count: 5
+    latest_backup: latest_backup.zip
+  db:
+    username: root 
+    password: root
+    name: dev
+  rsync:
+    username: app
+    password: password
+    host: 172.26.32.24
+    ip: 172.26.32.24
+    sync_dir: /Users/app/rsync
+
+unit:
+  local:
+    application:  digital_hub
+    app_root:  /var/www
+    backup_dir:  /var/www/backup
+    backup_folder: backups
+    cms_path: shared/cms
+    restore_pkg_path: /var/www/restore_dir
+    backup_count: 5
+    latest_backup: latest_backup.zip
+  db:
+    username: root 
+    password: root
+    name: dev
+  rsync:
+    username: app
+    password: password
+    host: 172.26.32.24
+    ip: 172.26.32.24
+    sync_dir: /Users/app/rsync_unit
